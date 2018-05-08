@@ -1,0 +1,32 @@
+@import 'variables.css';
+
+/**
+ * We can restructure this if we need to add animations later
+ */
+.nav-menu {
+  width: 36px;
+  height: 12px;
+  position: relative;
+}
+
+.nav-menu > .bar {
+  height: 2px;
+  position: absolute;
+  background-color: var(--lightgray);
+  width: 100%;
+}
+
+.nav-menu > .mid {
+  top: 5px;
+}
+
+.nav-menu > .bottom {
+  bottom: 0;
+  width: 75%;
+}
+
+@media only screen and (max-width : 700px) {
+  .nav-menu {
+    width: 24px;
+  }
+}

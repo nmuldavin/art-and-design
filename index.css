@@ -1,0 +1,21 @@
+@import 'variables.css';
+@import 'typography.css';
+
+@import 'site-header.css';
+@import 'nav-menu.css';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0 4vw;
+  background-color: var(--darkgray);
+}

@@ -1,0 +1,46 @@
+@import 'variables.css';
+@import 'fonts.css';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875em;
+  line-height: 1.5em;
+  color: var(--white);
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  line-height: 1.25em;
+  color: var(--darkgray);
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  color: var(--darkgray);
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25em;
+  line-height: 1.375em;
+  color: var(--darkgray);
+  font-weight: 600;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: var(--darkgray);
+  font-weight: 600;
+}

@@ -1,0 +1,17 @@
+/**  COLORS  **/
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --darkgray: #394249;
+  --lightgray: #bdc7cf;
+}
+
+/**  INCREMENTS  **/
+:root {
+  --xsmall: 1vw;
+  --small: 1.75vw;
+  --medium: 2vw;
+  --large: 4vw;
+  --xlarge: 8vw;
+  --max: 1200px;
+}
