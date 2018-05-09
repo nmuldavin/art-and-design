@@ -1,8 +1,11 @@
+@import 'fonts.css';
 @import 'variables.css';
 @import 'typography.css';
 
-@import 'site-header.css';
+@import 'content-block.css';
+@import 'issue-info.css';
 @import 'nav-menu.css';
+@import 'site-header.css';
 
 html {
   box-sizing: border-box;
@@ -16,6 +19,5 @@ html {
 
 body {
   margin: 0;
-  padding: 0 4vw;
   background-color: var(--darkgray);
 }

@@ -1,6 +1,7 @@
 .site-header {
   text-align: center;
   position: relative;
+  margin: 0 3.125vw;
 }
 
 .site-header > .site-logo {

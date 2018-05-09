@@ -1,11 +1,8 @@
-@import 'variables.css';
-@import 'fonts.css';
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.875em;
   line-height: 1.5em;
-  color: var(--white);
+  color: var(--darkgray);
   font-weight: 300;
 }
 
