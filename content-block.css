@@ -1,6 +1,7 @@
 .content-block {
   position: relative;
-  margin: 0 3.125vw;
+  margin: 0 var(--content-margin);
+  max-width: var(--max);
 }
 
 .content-block:not(:first-child) {
@@ -32,5 +33,20 @@
   .content-block > .issue-info {
     position: relative;
     top: 0;
+  }
+}
+
+@media only screen and (min-width : 1200px) {
+  .content-block {
+    margin: 0 var(--max-content-margin);
+  }
+
+  .content-block > .content {
+    margin: 0 48px;
+  }
+
+  .content-block > .issue-info {
+    position: absolute;
+    top: 48px;
   }
 }
