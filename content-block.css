@@ -1,0 +1,52 @@
+.content-block {
+  position: relative;
+  margin: 0 var(--content-margin);
+  max-width: var(--max);
+}
+
+.content-block:not(:first-child) {
+  margin-top: 12px;
+}
+
+.content-block > .issue-info {
+  position: absolute;
+  top: var(--large);
+}
+
+.content-block > .content {
+  margin: 0 4vw;
+}
+
+.content-block .image-full {
+  width: 100%;
+}
+
+@media only screen and (max-width : 700px) {
+  .content-block {
+    margin: 0;
+  }
+
+  .content-block > .content {
+    margin: 3.125vw;
+  }
+
+  .content-block > .issue-info {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media only screen and (min-width : 1200px) {
+  .content-block {
+    margin: 0 var(--max-content-margin);
+  }
+
+  .content-block > .content {
+    margin: 0 48px;
+  }
+
+  .content-block > .issue-info {
+    position: absolute;
+    top: 48px;
+  }
+}
