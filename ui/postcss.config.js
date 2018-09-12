@@ -2,6 +2,7 @@ const parseVariables = require('./buildUtils/parseVariables');
 
 const variables = {
   ...parseVariables('src/client/styles/colors.css'),
+  ...parseVariables('src/client/styles/variables.css'),
 };
 
 module.exports = {

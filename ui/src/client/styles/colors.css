@@ -1,3 +1,6 @@
 :root {
-  --test: blue;
+  --black: #000000;
+  --white: #ffffff;
+  --darkgray: #394249;
+  --lightgray: #bdc7cf;
 }

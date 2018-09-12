@@ -4,6 +4,9 @@ module.exports = {
       '<rootDir>/jest/fileMock.js',
     '\\.css$': 'identity-obj-proxy',
   },
+  transform: {
+    '^.+\\.(js|jsx|mjs)$': '<rootDir>/jest/customTransform.js',
+  },
   setupTestFrameworkScriptFile: '<rootDir>/jest/setupTests.js',
   testPathIgnorePatterns: ['<rootDir>/node_modules/'],
 };
