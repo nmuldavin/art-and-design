@@ -3,25 +3,27 @@
   position: relative;
   margin: 0 3.125vw;
   max-width: var(--max);
-}
 
-.site-header > .site-logo {
-  margin-top: 21px;
-  margin-bottom: 30px;
-}
+  & > .site-logo {
+    margin-top: 21px;
+    margin-bottom: 30px;
+  }
 
-.site-header > .nav-menu {
-  position: absolute;
-  top: 40px
+  & > .nav-menu {
+    position: absolute;
+    top: 40px
+  }
 }
 
 @media only screen and (max-width : 700px) {
-  .site-header > .site-logo {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
+  .site-header {
+    & > .site-logo {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
 
-  .site-header > .nav-menu {
-    top: 35px;
+    & > .nav-menu {
+      top: 35px;
+    }
   }
 }
