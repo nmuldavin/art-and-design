@@ -5,6 +5,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "./scripts/build",
+    "postbuild": "react-snap",
     "build:container": "./scripts/build-container",
     "format": "./scripts/format",
     "lint": "./scripts/lint",
@@ -13,6 +14,9 @@
     "test": "jest",
     "test:coverage": "jest --collectCoverage",
     "test:watch": "jest --watch"
+  },
+  "reactSnap": {
+    "source": "dist"
   },
   "devDependencies": {
     "@babel/core": "7.0.0",
@@ -54,7 +58,8 @@
     "react": "16.5.0",
     "react-dom": "16.5.0",
     "react-hot-loader": "4.3.6",
-    "react-router-dom": "4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-snap": "^1.19.0",
     "sass-loader": "7.1.0",
     "sinon": "6.2.0",
     "sinon-chai": "3.2.0",

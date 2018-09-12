@@ -1,12 +1,17 @@
 import React from 'react';
-import { render } from 'react-dom';
-
+import { render, hydrate } from 'react-dom';
 import App from './components/App';
 
 import './index.css';
 
-if (module.hot) {
+if (process.env.NODE_ENV === 'development' && module.hot) {
   module.hot.accept();
 }
 
-render(<App />, document.getElementById('root'));
+const rootElement = document.getElementById('root');
+
+if (rootElement.hasChildNodes()) {
+  hydrate(<App />, rootElement);
+} else {
+  render(<App />, rootElement);
+}

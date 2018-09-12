@@ -27,7 +27,7 @@ module.exports = {
       {
         test: /\.(js|jsx|mjs)$/,
         use: 'babel-loader',
-        exclude: /node_modules\/(?!@omaka)/,
+        exclude: /node_modules/,
       },
       {
         exclude: [/\.(js|jsx|mjs|html|json|css)$/],
