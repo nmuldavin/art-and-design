@@ -1,0 +1,10 @@
+:root {
+  --xsmall: 1vw;
+  --small: 1.75vw;
+  --medium: 2vw;
+  --large: 4vw;
+  --xlarge: 8vw;
+  --max: 1200px;
+  --content-margin: 3.125vw;
+  --max-content-margin: 37.5px;
+}

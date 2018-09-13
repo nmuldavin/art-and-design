@@ -1,0 +1,13 @@
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+/**
+ * Centered content for large screens
+ */
+.app-content {
+  margin: 0 3.125vw;
+  width: 100%;
+  max-width: var(--max);
+}

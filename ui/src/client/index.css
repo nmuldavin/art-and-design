@@ -1,0 +1,19 @@
+@import 'styles/colors.css';
+@import 'styles/variables.css';
+@import 'styles/fonts.css';
+@import 'styles/typography.css';
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--darkgray);
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
