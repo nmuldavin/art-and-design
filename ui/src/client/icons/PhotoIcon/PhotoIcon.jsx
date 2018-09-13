@@ -1,7 +1,7 @@
 import React from 'react';
 import Icon from '../../components/Icon';
 
-const CameraIcon = () => (
+const PhotoIcon = () => (
   <Icon>
     <circle cx="12" cy="11" r="4" />
     <circle cx="12" cy="11" r="2" />
@@ -11,4 +11,4 @@ const CameraIcon = () => (
   </Icon>
 );
 
-export default CameraIcon;
+export default PhotoIcon;

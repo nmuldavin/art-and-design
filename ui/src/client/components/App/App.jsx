@@ -3,7 +3,7 @@ import { hot } from 'react-hot-loader'; // this should only be done in the top l
 
 import SiteHeader from '../SiteHeader';
 import Profile from '../Profile';
-import CameraIcon from '../../icons/CameraIcon';
+import PhotoIcon from '../../icons/PhotoIcon';
 
 import styles from './App.css';
 
@@ -16,7 +16,7 @@ const App = () => (
         name="Noah Muldavin"
         date="13 SEP, 2018"
         discipline="Existential Angst"
-        icon={<CameraIcon />}
+        icon={<PhotoIcon />}
       />
     </div>
   </div>
