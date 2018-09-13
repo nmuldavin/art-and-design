@@ -1,8 +1,6 @@
 .site-header {
   text-align: center;
   position: relative;
-  margin: 0 3.125vw;
-  max-width: var(--max);
 
   & > .site-logo {
     margin-top: 21px;

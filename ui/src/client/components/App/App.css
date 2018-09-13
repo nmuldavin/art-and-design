@@ -1,5 +1,13 @@
 .app {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  justify-content: center;
+}
+
+/**
+ * Centered content for large screens
+ */
+.app-content {
+  margin: 0 3.125vw;
+  width: 100%;
+  max-width: var(--max);
 }
