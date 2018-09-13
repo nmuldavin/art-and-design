@@ -21,7 +21,7 @@ Icon.propTypes = {
 };
 
 Icon.defaultProps = {
-  viewBox: '0 0 18 13',
+  viewBox: '0 0 20 20',
   className: '',
 };
 
