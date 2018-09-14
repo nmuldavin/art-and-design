@@ -3,6 +3,6 @@ import { shallow } from 'enzyme';
 
 import PhotoIcon from './PhotoIcon';
 
-test('renders without crashing', () => {
-  shallow(<PhotoIcon />);
+test('Passes on className', () => {
+  shallow(<PhotoIcon className="my-class" />).should.have.className('my-class');
 });

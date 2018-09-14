@@ -14,7 +14,7 @@ const App = () => (
       <Profile
         issueNumber={1}
         name="Noah Muldavin"
-        date="13 SEP, 2018"
+        date={new Date('September 13, 2018')}
         discipline="Existential Angst"
         icon={<PhotoIcon />}
       />

@@ -4,19 +4,19 @@
   height: 20vw;
   max-width: 220px;
   max-height: 220px;
-  min-height: 160px;
-  min-width: 160px;
+  min-height: 180px;
+  min-width: 180px;
   padding: 2vw;
-  /* z-index: 1; */
-}
+  text-transform: uppercase;
 
-.profile .name {
-  margin-bottom: 0;
-  margin-top: 10px;
-}
+  & .name {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
 
-.profile .icon {
-  margin-top: 7px;
+  & .discipline {
+    margin-bottom: 7px;
+  }
 }
 
 @media only screen and (max-width : 700px) {
@@ -28,43 +28,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
 
-  .profile .row {
-    display: flex;
-    justify-content: center;
-  }
+    & .row {
+      display: flex;
+      justify-content: center;
+    }
 
-  .profile .top {
-    align-items: flex-end;
-  }
+    & .top {
+      align-items: flex-end;
+    }
 
-  .profile .column.left {
-    text-align: right;
-    width: 100px;
-    padding-right: 16px;
-  }
+    & .column.left {
+      text-align: right;
+      width: 100px;
+      padding-right: 16px;
+    }
 
-  .profile .name {
-    margin-top: 0;
-  }
+    & .name {
+      margin-top: 0;
+    }
 
-  .profile .icon {
-    margin-top: 0;
-    margin-right: 6px;
-    order: 1;
-  }
+    & .discipline {
+      margin-bottom: 0;
+      margin-left: 6px;
+      order: 2;
+    }
 
-  .profile .discipline {
-    order: 2;
-  }
+    & .column.right {
+      flex: 1 0 auto;
+    }
 
-  .profile .column.right {
-    flex: 1 0 auto;
-  }
-
-  .profile .discipline-group {
-    display: flex;
-    flex-wrap: nowrap;
+    & .discipline-group {
+      display: flex;
+      flex-wrap: nowrap;
+    }
   }
 }

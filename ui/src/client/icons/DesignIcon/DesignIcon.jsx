@@ -1,8 +1,8 @@
 import React from 'react';
 import Icon from '../../components/Icon';
 
-const DesignIcon = () => (
-  <Icon>
+const DesignIcon = props => (
+  <Icon {...props}>
     <rect x="4.5" y="0.5" width="1" height="7" />
     <rect x="1.5" y="12.5" width="6" height="2" />
     <path d="M6.46618652,12.5 C6.46618652,11.197998 5.62573242,9.57641602 4.46618652,9 C5.47920736,7.66829427 6.82381185,5.0016276 8.5,1" />

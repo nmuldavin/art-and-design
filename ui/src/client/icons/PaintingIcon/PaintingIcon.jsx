@@ -1,8 +1,8 @@
 import React from 'react';
 import Icon from '../../components/Icon';
 
-const PaintingIcon = () => (
-  <Icon>
+const PaintingIcon = props => (
+  <Icon {...props}>
     <circle cx="8.5" cy="6.5" r="1" />
     <circle cx="5" cy="8" r="1" />
     <circle cx="5" cy="11" r="1" />

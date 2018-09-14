@@ -1,8 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import PhotoIcon from './PhotoIcon';
+import DesignIcon from './DesignIcon';
 
-test('renders without crashing', () => {
-  shallow(<PhotoIcon />);
+test('Passes on className', () => {
+  shallow(<DesignIcon className="my-class" />).should.have.className(
+    'my-class',
+  );
 });
