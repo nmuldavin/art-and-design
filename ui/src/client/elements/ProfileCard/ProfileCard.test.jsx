@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Profile from './Profile';
+import ProfileCard from './ProfileCard';
 
 test('renders without crashing', () => {
   const props = {
@@ -12,5 +12,5 @@ test('renders without crashing', () => {
     icon: 'hi',
   };
 
-  shallow(<Profile {...props} />);
+  shallow(<ProfileCard {...props} />);
 });

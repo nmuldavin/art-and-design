@@ -1,0 +1,25 @@
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+/**
+ * Centered content for large screens
+ */
+.app-content {
+  margin: 0 var(--content-margin);
+  width: 100%;
+  max-width: var(--content-max-width);
+}
+
+@media only screen and (max-width : 700px) {
+  .app-content {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width : 1200px) {
+  .app-content {
+    margin: 0 var(--max-content-margin);
+  }
+}

@@ -1,4 +1,4 @@
-.profile {
+.profile-card {
   background-color: var(--white);
   width: 20vw;
   height: 20vw;
@@ -6,7 +6,7 @@
   max-height: 220px;
   min-height: 180px;
   min-width: 180px;
-  padding: 2vw;
+  padding: var(--medium);
   text-transform: uppercase;
 
   & .name {
@@ -20,7 +20,7 @@
 }
 
 @media only screen and (max-width : 700px) {
-  .profile {
+  .profile-card {
     width: 100vw;
     max-width: none;
     height: 78px;
@@ -38,7 +38,7 @@
       align-items: flex-end;
     }
 
-    & .column.left {
+    & .left {
       text-align: right;
       width: 100px;
       padding-right: 16px;
@@ -54,7 +54,7 @@
       order: 2;
     }
 
-    & .column.right {
+    & .right {
       flex: 1 0 auto;
     }
 

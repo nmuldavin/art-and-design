@@ -2,8 +2,7 @@ import React from 'react';
 import { hot } from 'react-hot-loader'; // this should only be done in the top level App component
 
 import SiteHeader from '../SiteHeader';
-import Profile from '../Profile';
-import PhotoIcon from '../../icons/PhotoIcon';
+import ProfileHero from '../../layouts/ProfileHero';
 
 import styles from './App.css';
 
@@ -11,13 +10,7 @@ const App = () => (
   <div className={styles.app}>
     <div className={styles.appContent}>
       <SiteHeader />
-      <Profile
-        issueNumber={1}
-        name="Noah Muldavin"
-        date={new Date('September 13, 2018')}
-        discipline="Existential Angst"
-        icon={<PhotoIcon />}
-      />
+      <ProfileHero />
     </div>
   </div>
 );

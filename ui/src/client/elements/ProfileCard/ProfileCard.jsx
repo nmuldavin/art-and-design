@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import formatDate from '../../methods/formatDate';
 import formatNumber from '../../methods/formatNumber';
 
-import styles from './Profile.css';
+import styles from './ProfileCard.css';
 
 const propTypes = {
   issueNumber: number.isRequired,
@@ -13,6 +13,11 @@ const propTypes = {
   date: instanceOf(Date).isRequired,
   discipline: string.isRequired,
   icon: node.isRequired,
+  className: string,
+};
+
+const defaultProps = {
+  className: '',
 };
 
 const formatIssueNumber = num =>
@@ -21,28 +26,27 @@ const formatIssueNumber = num =>
 const formatIssueDate = date =>
   formatDate(date, { year: 'numeric', month: 'short', day: 'numeric' });
 
-const ProfileCard = ({ issueNumber, name, date, discipline, icon }) => (
-  <div className={styles.profile}>
+const ProfileCard = ({
+  issueNumber,
+  name,
+  date,
+  discipline,
+  icon,
+  className,
+}) => (
+  <div className={classNames(styles.profileCard, className)}>
     <div className={styles.profileContainer}>
       <div className={classNames(styles.row, styles.top)}>
-        <h2 className={classNames(styles.column, styles.left, styles.number)}>
+        <h2 className={classNames(styles.left, styles.number)}>
           {formatIssueNumber(issueNumber)}
         </h2>
-        <h4 className={classNames(styles.column, styles.right, styles.name)}>
-          {name}
-        </h4>
+        <h4 className={classNames(styles.right, styles.name)}>{name}</h4>
       </div>
       <div className={classNames(styles.row, styles.bottom)}>
-        <div className={classNames(styles.column, styles.left, styles.date)}>
+        <div className={classNames(styles.left, styles.date)}>
           {formatIssueDate(date)}
         </div>
-        <div
-          className={classNames(
-            styles.column,
-            styles.right,
-            styles.disciplineGroup,
-          )}
-        >
+        <div className={classNames(styles.right, styles.disciplineGroup)}>
           <div className={styles.discipline}>{discipline}</div>
           {icon}
         </div>
@@ -52,5 +56,6 @@ const ProfileCard = ({ issueNumber, name, date, discipline, icon }) => (
 );
 
 ProfileCard.propTypes = propTypes;
+ProfileCard.defaultProps = defaultProps;
 
 export default ProfileCard;

@@ -4,7 +4,7 @@
   --medium: 2vw;
   --large: 4vw;
   --xlarge: 8vw;
-  --max: 1200px;
+  --content-max-width: 1200px;
   --content-margin: 3.125vw;
   --max-content-margin: 37.5px;
 }
