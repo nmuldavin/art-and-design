@@ -11,10 +11,10 @@ const propTypes = {
   date: instanceOf(Date).isRequired,
   discipline: string.isRequired,
   icon: node.isRequired,
-  image: string.isRequired,
+  hero: string.isRequired,
 };
 
-const ProfileHero = ({ issueNumber, name, date, discipline, icon, image }) => (
+const ProfileHero = ({ issueNumber, name, date, discipline, icon, hero }) => (
   <div className={styles.profileHero}>
     <ProfileCard
       className={styles.profileCard}
@@ -25,7 +25,7 @@ const ProfileHero = ({ issueNumber, name, date, discipline, icon, image }) => (
       icon={icon}
     />
     <div className={styles.profileHeroInner}>
-      <img src={image} className={styles.heroImage} alt={name} />
+      <img src={hero} className={styles.heroImage} alt={name} />
     </div>
   </div>
 );
