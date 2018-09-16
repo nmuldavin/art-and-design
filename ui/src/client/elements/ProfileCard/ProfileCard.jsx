@@ -1,9 +1,10 @@
 import React from 'react';
-import { number, string, node, instanceOf } from 'prop-types';
+import { number, string, instanceOf } from 'prop-types';
 import classNames from 'classnames';
 
 import formatDate from '../../methods/formatDate';
 import formatNumber from '../../methods/formatNumber';
+import Icon from '../../icons/standard';
 
 import styles from './ProfileCard.css';
 
@@ -12,7 +13,7 @@ const propTypes = {
   name: string.isRequired,
   date: instanceOf(Date).isRequired,
   discipline: string.isRequired,
-  icon: node.isRequired,
+  icon: string.isRequired,
   className: string,
 };
 
@@ -48,7 +49,7 @@ const ProfileCard = ({
         </div>
         <div className={classNames(styles.right, styles.disciplineGroup)}>
           <div className={styles.discipline}>{discipline}</div>
-          {icon}
+          <Icon type={icon} />
         </div>
       </div>
     </div>

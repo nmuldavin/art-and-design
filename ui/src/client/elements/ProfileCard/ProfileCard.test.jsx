@@ -9,7 +9,7 @@ test('renders without crashing', () => {
     name: 'Name',
     discipline: 'discipline',
     date: new Date('September 13, 2018'),
-    icon: 'hi',
+    icon: 'painting',
   };
 
   shallow(<ProfileCard {...props} />);

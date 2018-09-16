@@ -9,8 +9,8 @@ test('renders without crashing', () => {
     name: 'Name',
     discipline: 'discipline',
     date: new Date('September 13, 2018'),
-    icon: 'hi',
-    image: 'image',
+    icon: 'photo',
+    hero: 'image',
   };
 
   shallow(<ProfileHero {...props} />);

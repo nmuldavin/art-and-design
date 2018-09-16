@@ -1,5 +1,5 @@
 import React from 'react';
-import { number, string, node, instanceOf } from 'prop-types';
+import { number, string, instanceOf } from 'prop-types';
 
 import ProfileCard from '../../elements/ProfileCard';
 
@@ -10,7 +10,7 @@ const propTypes = {
   name: string.isRequired,
   date: instanceOf(Date).isRequired,
   discipline: string.isRequired,
-  icon: node.isRequired,
+  icon: string.isRequired,
   hero: string.isRequired,
 };
 
