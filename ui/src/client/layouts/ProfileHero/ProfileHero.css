@@ -18,7 +18,7 @@
 
 @media only screen and (max-width : 700px) {
   .profile-hero {
-    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .profile-card {
@@ -27,7 +27,7 @@
   }
 
   .profile-hero-inner {
-    margin: var(--content-margin);
+    margin: 10px var(--content-margin) 0;
   }
 }
 

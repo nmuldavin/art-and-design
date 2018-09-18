@@ -12,8 +12,7 @@ h1 {
   line-height: 40px;
   color: var(--darkgray);
   font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 h2 {
@@ -22,8 +21,7 @@ h2 {
   line-height: 30px;
   color: var(--darkgray);
   font-weight: 300;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 h3 {
@@ -32,6 +30,8 @@ h3 {
   line-height: 32px;
   color: var(--darkgray);
   font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h4 {
@@ -40,4 +40,9 @@ h4 {
   line-height: 24px;
   color: var(--darkgray);
   font-weight: 600;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }

@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 
 import ProfileHero from '../../layouts/ProfileHero';
+import Profile from '../../layouts/Profile';
 
 import hero from './hero.jpg';
 
@@ -14,6 +15,7 @@ const Example = () => (
       icon="photo"
       hero={hero}
     />
+    <Profile />
   </Fragment>
 );
 
