@@ -1,7 +1,7 @@
 import React from 'react';
 import { number, string, instanceOf } from 'prop-types';
 
-import IssueCard from '../../elements/IssueCard';
+import IssueCard from '../../../elements/IssueCard';
 
 import styles from './IssueHeader.css';
 

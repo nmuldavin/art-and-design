@@ -4,5 +4,9 @@ import { shallow } from 'enzyme';
 import SocialSvgIcon from './SocialSvgIcon';
 
 test('renders without crashing', () => {
-  shallow(<SocialSvgIcon />);
+  shallow(
+    <SocialSvgIcon>
+      <path />
+    </SocialSvgIcon>,
+  );
 });

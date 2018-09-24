@@ -1,18 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import { shallow } from 'enzyme';
 
-import Issue from '../../layouts/Issue';
+import Profile from './Profile';
 
-import hero from './hero.jpg';
-import profileImage from './profile.jpg';
-
-const issue = {
-  issueNumber: 1,
+const requiredProps = {
   name: 'Eric Herrman',
-  date: new Date('09/13/18'),
-  discipline: 'Photography',
-  icon: 'photo',
-  hero,
-  profileImage,
+  profileImage: 'image',
   description: `Lorem ipsum dolor sit amet consectetur adipising elit, sed do
 euismod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim
 veniam.`,
@@ -25,12 +18,6 @@ veniam.`,
   ],
 };
 
-const Example = () => (
-  <Fragment>
-    <Issue {...issue}>
-      <div>Holy crap</div>
-    </Issue>
-  </Fragment>
-);
-
-export default Example;
+test('renders without crashing', () => {
+  shallow(<Profile {...requiredProps} />);
+});

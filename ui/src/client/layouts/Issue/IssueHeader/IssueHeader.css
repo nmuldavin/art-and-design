@@ -13,12 +13,13 @@
 }
 
 .hero-image {
+  display: block;
   width: 100%;
 }
 
-@media only screen and (max-width : 700px) {
+@media only screen and (max-width: 700px) {
   .issue-header {
-    margin-bottom: var(--content-block-gap-small);
+    margin-bottom: var(--content-margin-outer);
   }
 
   .issue-card {
@@ -27,11 +28,11 @@
   }
 
   .issue-header-inner {
-    margin: var(--content-block-gap-small) var(--content-margin-outer) 0;
+    margin: var(--content-margin-outer) var(--content-margin-outer) 0;
   }
 }
 
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width: 1200px) {
   .issue-header-inner {
     margin: 0 var(--content-margin-inner-max);
   }
