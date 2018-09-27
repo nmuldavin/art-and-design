@@ -74,4 +74,8 @@
     margin: 0 var(--content-margin-inner-max);
     padding: var(--content-padding-small-max) var(--content-padding-large-max);
   }
+
+  .content-group {
+    margin-left: calc(150px - var(--content-margin-inner-max));
+  }
 }

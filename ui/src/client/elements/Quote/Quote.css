@@ -1,0 +1,26 @@
+.quote {
+  padding: var(--content-padding-large);
+  background-color: var(--lightgray);
+  line-height: 33px;
+}
+
+.credit {
+  line-height: 33px;
+  text-transform: uppercase;
+}
+
+.text {
+  line-height: 33px;
+}
+
+@media only screen and (max-width: 700px) {
+  .quote {
+    padding: 6.25vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .quote {
+    padding: var(--content-padding-large-max);
+  }
+}

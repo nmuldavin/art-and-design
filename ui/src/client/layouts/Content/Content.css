@@ -1,0 +1,27 @@
+.content {
+  background-color: var(--white);
+  margin: 0 var(--content-margin-inner);
+  padding: var(--content-padding-small) var(--content-padding-large);
+}
+
+.title {
+  margin-bottom: 12px;
+}
+
+@media only screen and (max-width: 700px) {
+  .content {
+    margin: var(--content-margin-outer) var(--content-margin-outer) 0;
+    padding: 6.25vw;
+  }
+
+  .quote {
+    margin: 6.25vw -6.25vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content {
+    margin: 0 var(--content-margin-inner-max);
+    padding: var(--content-padding-small-max) var(--content-padding-large-max);
+  }
+}

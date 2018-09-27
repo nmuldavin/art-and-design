@@ -24,7 +24,7 @@ const Profile = ({ name, profileImage, description, socialIcons }) => (
       <div className={styles.contentGroup}>
         <div className={styles.nameImageGroup}>
           <img className={styles.profileImage} src={profileImage} alt={name} />
-          <h1 className={styles.name}>{name}</h1>
+          <h2 className={styles.name}>{name}</h2>
         </div>
         <p className={styles.description}>{description}</p>
         <div className={styles.icons}>{map(IconLink, socialIcons)}</div>
