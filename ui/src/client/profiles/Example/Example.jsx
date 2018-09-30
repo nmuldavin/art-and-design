@@ -3,10 +3,14 @@ import React, { Fragment } from 'react';
 import Issue from '../../layouts/Issue';
 import Content, { Quote } from '../../layouts/Content';
 import FullImage from '../../layouts/FullImage';
+import DualImage, { Image } from '../../layouts/DualImage';
 
 import hero from './hero.jpg';
 import profileImage from './profile.jpg';
 import bayBridge from './bayBridge.jpg';
+import shifter from './shifter.jpg';
+import deschutes from './deschutes.jpg';
+import speaker from './speaker.jpg';
 
 const issue = {
   issueNumber: 1,
@@ -74,6 +78,39 @@ const Example = () => (
         </p>
       </Content>
       <FullImage src={bayBridge} alt="Bay Bridge" />
+      <Content>
+        <h4>Why are you like this?</h4>
+        <p>
+          You may be a person who loves to cook. You absolutely love to spend
+          time in your kitchen. As a result, you like to outfit your kitchen
+          with the latest and with the best cookware that is available on the
+          market. However, and with that said, if you are like most people in
+          the 21st century, you also live your life on a budget. You simply do
+          not have a great deal of extra money to blow and spend at will.
+          Therefore, with the goal of outfitting your kitchen with the latest,
+          with the best in cookware, you also want to keep your eyes on ways in
+          which you can save money on your cookware purchases. To this end, you
+          might want to focus your attention on the Internet and the World Wide
+          Web, specifically on overstock merchandise sites that are springing up
+          all over the Net.
+        </p>
+        <Quote credit="Eric Herrmann">
+          I like chicken, I like liver. Meow Mix. Meow Mix. Please deliver.
+        </Quote>
+        <h4>Why do birds suddenly appear?</h4>
+        <p>
+          As a final reminder, make certain that you only patronize those
+          overstock sites that have established reputations for reliability. By
+          shopping at an established site, you will make certain that you do
+          obtain exactly the cookware products that you have bargained for while
+          visiting one of the overstock venues on the Net.
+        </p>
+      </Content>
+      <FullImage src={shifter} alt="Shifter" />
+      <DualImage>
+        <Image src={deschutes} alt="Deschutes" />
+        <Image src={speaker} alt="Speaker" />
+      </DualImage>
     </Issue>
   </Fragment>
 );
