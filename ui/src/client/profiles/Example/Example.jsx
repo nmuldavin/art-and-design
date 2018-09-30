@@ -2,9 +2,11 @@ import React, { Fragment } from 'react';
 
 import Issue from '../../layouts/Issue';
 import Content, { Quote } from '../../layouts/Content';
+import FullImage from '../../layouts/FullImage';
 
 import hero from './hero.jpg';
 import profileImage from './profile.jpg';
+import bayBridge from './bayBridge.jpg';
 
 const issue = {
   issueNumber: 1,
@@ -71,6 +73,7 @@ const Example = () => (
           godsend.
         </p>
       </Content>
+      <FullImage src={bayBridge} alt="Bay Bridge" />
     </Issue>
   </Fragment>
 );
