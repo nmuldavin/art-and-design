@@ -3,12 +3,12 @@
   margin-bottom: var(--content-block-gap);
 
   & .issue-header-inner {
-    margin: 0 var(--content-margin-inner);
+    margin: 0 var(--large);
   }
 
   & .issue-card {
     position: absolute;
-    top: var(--content-margin-inner);
+    top: var(--large);
   }
 
   & .hero-image {
@@ -19,7 +19,7 @@
 
 @media only screen and (max-width: 700px) {
   .issue-header {
-    margin-bottom: var(--content-margin-outer);
+    margin-bottom: var(--medium);
 
     & .issue-card {
       position: relative;
@@ -27,7 +27,7 @@
     }
 
     & .issue-header-inner {
-      margin: var(--content-margin-outer) var(--content-margin-outer) 0;
+      margin: var(--medium) var(--medium) 0;
     }
   }
 }
@@ -35,11 +35,11 @@
 @media only screen and (min-width: 1200px) {
   .issue-header {
     & .issue-header-inner {
-      margin: 0 var(--content-margin-inner-max);
+      margin: 0 var(--large-max);
     }
 
     & .issue-card {
-      top: var(--content-margin-inner-max);
+      top: var(--large-max);
     }
   }
 }

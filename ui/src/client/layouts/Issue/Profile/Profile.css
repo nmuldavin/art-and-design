@@ -1,15 +1,19 @@
 .profile {
+  --image-max-width: 150px;
+  --image-max-height: 150px;
+  --description-max-width: 500px;
+
   position: relative;
 
   & .profile-inner {
     background: var(--white);
-    margin: 0 var(--content-margin-inner);
-    padding: var(--content-padding-small) var(--content-padding-large);
+    margin: 0 var(--large);
+    padding: var(--small) var(--large);
   }
 
   & .profile-image {
-    width: 150px;
-    height: 150px;
+    width: var(--image-max-width);
+    height: var(--image-max-height);
     position: absolute;
     left: 0;
     top: 0;
@@ -17,7 +21,7 @@
 
   & .description {
     margin-bottom: var(--content-block-gap);
-    max-width: 500px;
+    max-width: var(--description-max-width);
   }
 
   & .icon {
@@ -25,13 +29,13 @@
   }
 
   & .content-group {
-    margin-left: calc(150px - var(--content-margin-inner));
+    margin-left: calc(var(--image-max-width) - var(--large));
   }
 }
 
 @media only screen and (max-width: 700px) {
   .profile {
-    margin-bottom: var(--content-margin-outer);
+    margin-bottom: var(--medium);
 
     & .description {
       margin-bottom: 10px;
@@ -44,23 +48,23 @@
 
     & .name-image-group {
       display: flex;
-      margin-left: calc((var(--content-margin-outer) + 6.25vw) * -1);
+      margin-left: calc((var(--large) + var(--xl)) * -1);
       margin-bottom: 16px;
       align-items: center;
     }
 
     & .profile-image {
-      width: 31.25vw;
-      height: 31.25vw;
-      max-width: 150px;
-      max-height: 150px;
+      width: calc(10 * var(--medium));
+      height: calc(10 * var(--medium));
+      max-width: var(--image-max-width);
+      max-height: var(--image-max-height);
       position: relative;
       margin-right: var(--large);
     }
 
     & .profile-inner {
-      margin: 0 var(--content-margin);
-      padding: 0 6.25vw 6.25vw;
+      margin: 0 var(--medium);
+      padding: 0 var(--xl) var(--xl);
     }
 
     & .icons {
@@ -72,12 +76,12 @@
 @media only screen and (min-width: 1200px) {
   .profile {
     & .profile-inner {
-      margin: 0 var(--content-margin-inner-max);
-      padding: var(--content-padding-small-max) var(--content-padding-large-max);
+      margin: 0 var(--large-max);
+      padding: var(--small-max) var(--large-max);
     }
 
     & .content-group {
-      margin-left: calc(150px - var(--content-margin-inner-max));
+      margin-left: calc(var(--image-max-width) - var(--large-max));
     }
   }
 }

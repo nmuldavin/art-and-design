@@ -1,0 +1,36 @@
+.multi-image {
+  margin: 0 var(--large) var(--content-block-gap);
+  display: flex;
+
+  & .image {
+    flex: 1;
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+
+  & .image-element {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .multi-image {
+    margin: 0 var(--medium) var(--medium);
+    flex-direction: column;
+
+    & .image {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: var(--medium);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .multi-image {
+    margin: 0 var(--large-max) var(--content-block-gap);
+  }
+}

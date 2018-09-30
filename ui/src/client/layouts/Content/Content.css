@@ -1,6 +1,6 @@
 .content {
-  --quote-width: calc(10 * var(--medium));
-  --quote-width-max: calc(10 * var(--medium-max));
+  --sidefloat-width: calc(10 * var(--medium));
+  --sidefloat-width-max: calc(10 * var(--medium-max));
 
   background-color: var(--white);
   margin: 0 var(--large) var(--content-block-gap);
@@ -16,18 +16,18 @@
   }
 
   & .content-inner {
-    margin-right: calc(var(--quote-width) - var(--large));
+    margin-right: calc(var(--sidefloat-width) - var(--large));
   }
 
   & .title {
     margin-bottom: 12px;
   }
 
-  & .quote {
+  & .side-float {
     position: absolute;
-    width: var(--quote-width);
+    width: var(--sidefloat-width);
     top: 0;
-    right: calc(-1 * var(--content-margin-inner));
+    right: calc(-1 * var(--large));
   }
 }
 
@@ -38,15 +38,28 @@
 
     & .title,
     & .content-inner {
-      padding: 0 6.25vw;
+      padding: 0 var(--xl);
       margin: 0;
     }
 
-    & .quote {
+    & .side-float {
       right: 0;
       position: relative;
       width: auto;
-      margin: var(--xl) calc(-1 * var(--xl));
+      margin-left: calc(-1 * var(--xl));
+      margin-right: calc(-1 * var(--xl));
+
+      &:not(:first-child) {
+        margin-top: var(--xl);
+      }
+
+      &:first-child {
+        margin-top: calc(-1 * var(--xl));
+      }
+
+      &:not(:last-child) {
+        margin-bottom: var(--xl);
+      }
     }
   }
 }
@@ -62,11 +75,11 @@
     }
 
     & .content-inner {
-      margin-right: calc(var(--quote-width-max) - var(--large));
+      margin-right: calc(var(--sidefloat-width-max) - var(--large));
     }
 
-    & .quote {
-      width: var(--quote-width-max);
+    & .side-float {
+      width: var(--sidefloat-width-max);
     }
   }
 }
