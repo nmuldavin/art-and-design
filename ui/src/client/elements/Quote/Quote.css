@@ -1,26 +1,28 @@
 .quote {
-  padding: var(--content-padding-large);
+  --quote-text-line-height: 33px;
+
+  padding: var(--large);
   background-color: var(--lightgray);
-  line-height: 33px;
-}
+  line-height: var(--quote-text-line-height);
 
-.credit {
-  line-height: 33px;
-  text-transform: uppercase;
-}
+  & .credit {
+    line-height: var(--quote-text-line-height);
+    text-transform: uppercase;
+  }
 
-.text {
-  line-height: 33px;
+  & .text {
+    line-height: var(--quote-text-line-height);
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .quote {
-    padding: 6.25vw;
+    padding: var(--xl);
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .quote {
-    padding: var(--content-padding-large-max);
+    padding: var(--large-max);
   }
 }

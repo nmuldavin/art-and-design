@@ -1,27 +1,72 @@
 .content {
-  background-color: var(--white);
-  margin: 0 var(--content-margin-inner);
-  padding: var(--content-padding-small) var(--content-padding-large);
-}
+  --quote-width: calc(10 * var(--medium));
+  --quote-width-max: calc(10 * var(--medium-max));
 
-.title {
-  margin-bottom: 12px;
+  background-color: var(--white);
+  margin: 0 var(--large) var(--content-block-gap);
+  padding: var(--small) 0;
+
+  & .content-below-header {
+    position: relative;
+  }
+
+  & .title,
+  & .content-inner {
+    padding: 0 var(--large);
+  }
+
+  & .content-inner {
+    margin-right: calc(var(--quote-width) - var(--large));
+  }
+
+  & .title {
+    margin-bottom: 12px;
+  }
+
+  & .quote {
+    position: absolute;
+    width: var(--quote-width);
+    top: 0;
+    right: calc(-1 * var(--content-margin-inner));
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .content {
-    margin: var(--content-margin-outer) var(--content-margin-outer) 0;
-    padding: 6.25vw;
-  }
+    margin: 0 var(--medium) var(--large);
+    padding: var(--xl) 0;
 
-  .quote {
-    margin: 6.25vw -6.25vw;
+    & .title,
+    & .content-inner {
+      padding: 0 6.25vw;
+      margin: 0;
+    }
+
+    & .quote {
+      right: 0;
+      position: relative;
+      width: auto;
+      margin: var(--xl) calc(-1 * var(--xl));
+    }
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .content {
     margin: 0 var(--content-margin-inner-max);
-    padding: var(--content-padding-small-max) var(--content-padding-large-max);
+    padding: var(--content-padding-small-max) 0;
+
+    & .title,
+    & .content-inner {
+      padding: 0 var(--content-padding-large-max);
+    }
+
+    & .content-inner {
+      margin-right: calc(var(--quote-width-max) - var(--content-margin-inner));
+    }
+
+    & .quote {
+      width: var(--quote-width-max);
+    }
   }
 }

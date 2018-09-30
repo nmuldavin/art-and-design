@@ -1,23 +1,27 @@
 .app {
   display: flex;
   justify-content: center;
-}
 
-.app-content {
-  width: 100%;
-  margin: 0 var(--content-margin-outer);
-  max-width: var(--content-max-width);
-  min-width: var(--content-min-width);
+  & .app-content {
+    width: 100%;
+    margin: 0 var(--medium);
+    max-width: var(--content-max-width);
+    min-width: var(--content-min-width);
+  }
 }
 
 @media only screen and (max-width: 700px) {
-  .app-content {
-    margin: 0;
+  .app {
+    & .app-content {
+      margin: 0;
+    }
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .app-content {
-    margin: 0 var(--content-margin-outer-max);
+  .app {
+    & .app-content {
+      margin: 0 var(--medium-max);
+    }
   }
 }
