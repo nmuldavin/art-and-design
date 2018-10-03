@@ -43,4 +43,7 @@ module.exports = {
     symlinks: false,
     modules: [path.resolve(__dirname, '../node_modules')],
   },
+  performance: {
+    assetFilter: fileName => /\.(js|css)$/.test(fileName),
+  },
 };

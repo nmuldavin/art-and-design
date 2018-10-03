@@ -1,0 +1,11 @@
+.copyright {
+  color: var(--white);
+  line-height: 22px;
+  margin: 40px 16px 12px;
+  text-align: center;
+
+  & .link {
+    color: var(--white);
+    text-decoration: none;
+  }
+}

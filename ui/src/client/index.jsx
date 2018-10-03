@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, hydrate } from 'react-dom';
-import App from './components/App';
+import App from './foundations/App';
 
 import './index.css';
 

@@ -1,0 +1,45 @@
+.issue-header {
+  position: relative;
+  margin-bottom: var(--content-block-gap);
+
+  & .issue-header-inner {
+    margin: 0 var(--large);
+  }
+
+  & .issue-card {
+    position: absolute;
+    top: var(--large);
+  }
+
+  & .hero-image {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .issue-header {
+    margin-bottom: var(--medium);
+
+    & .issue-card {
+      position: relative;
+      top: 0;
+    }
+
+    & .issue-header-inner {
+      margin: var(--medium) var(--medium) 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .issue-header {
+    & .issue-header-inner {
+      margin: 0 var(--large-max);
+    }
+
+    & .issue-card {
+      top: var(--large-max);
+    }
+  }
+}

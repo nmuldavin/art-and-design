@@ -1,10 +1,34 @@
 :root {
-  --xsmall: 1vw;
-  --small: 1.75vw;
-  --medium: 2vw;
+  --small: 2vw;
+  --small-max: 24px;
+  --medium: 3.125vw;
+  --medium-max: 37.5px;
   --large: 4vw;
-  --xlarge: 8vw;
-  --max: 1200px;
-  --content-margin: 3.125vw;
-  --max-content-margin: 37.5px;
+  --large-max: 48px;
+  --xl: 6.25vw;
+  --xl-max: 75px;
+
+  --content-max-width: 1200px;
+  --content-min-width: 320px;
+
+  --content-block-gap: 12px;
+}
+
+:root {
+  --content-margin-outer: 3.125vw;
+  --content-margin-outer-max: 37.5px;
+
+  --content-margin-inner: 4vw;
+  --content-margin-inner-max: 48px;
+
+  --content-padding-small: 2vw;
+  --content-padding-small-max: 24px;
+
+  --content-padding-large: 4vw;
+  --content-padding-large-max: 48px;
+
+  --content-padding-xl: 6.25vw;
+  --content-padding-xl-max: 75px;
+
+  --content-block-gap-small: 10px;
 }

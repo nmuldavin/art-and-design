@@ -1,0 +1,8 @@
+.social-svg-icon {
+  width: 30px;
+  height: 30px;
+  stroke: var(--darkgray);
+  stroke-width: 2;
+  fill: var(--darkgray);
+  fill-opacity: 0;
+}

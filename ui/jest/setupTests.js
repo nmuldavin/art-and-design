@@ -12,4 +12,9 @@ chai.should();
 window.URLSearchParams = URLSearchParams;
 window.expect = expect;
 
+// eslint-disable-next-line
+console.error = e => {
+  throw new Error(e);
+};
+
 configure({ adapter: new Adapter() });
