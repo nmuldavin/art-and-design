@@ -3,6 +3,7 @@ import { arrayOf, shape, string, instanceOf, number, node } from 'prop-types';
 
 import IssueHeader from './IssueHeader';
 import Profile from './Profile';
+import BottomNav from './BottomNav';
 
 const propTypes = {
   issueNumber: number.isRequired,
@@ -50,6 +51,7 @@ const Issue = ({
       socialIcons={socialIcons}
     />
     {children}
+    <BottomNav issueNumber={issueNumber} />
   </Fragment>
 );
 

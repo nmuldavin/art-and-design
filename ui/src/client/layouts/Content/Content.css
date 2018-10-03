@@ -75,11 +75,12 @@
     }
 
     & .content-inner {
-      margin-right: calc(var(--sidefloat-width-max) - var(--large));
+      margin-right: calc(var(--sidefloat-width-max) - var(--large-max));
     }
 
     & .side-float {
       width: var(--sidefloat-width-max);
+      right: calc(-1 * var(--large-max));
     }
   }
 }

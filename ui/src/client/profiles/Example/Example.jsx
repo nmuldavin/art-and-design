@@ -5,37 +5,17 @@ import Content, { Quote, CaptionedImage } from '../../layouts/Content';
 import FullImage from '../../layouts/FullImage';
 import MultiImage, { Image } from '../../layouts/MultiImage';
 
-import hero from './hero.jpg';
-import profileImage from './profile.jpg';
 import bayBridge from './bayBridge.jpg';
 import shifter from './shifter.jpg';
 import deschutes from './deschutes.jpg';
 import speaker from './speaker.jpg';
 import gamingDevice from './gamingDevice.jpg';
 
-const issue = {
-  issueNumber: 1,
-  name: 'Eric Herrman',
-  date: new Date('09/13/18'),
-  discipline: 'Photography',
-  icon: 'photo',
-  hero,
-  profileImage,
-  description: `Lorem ipsum dolor sit amet consectetur adipising elit, sed do
-euismod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim
-veniam.`,
-  socialIcons: [
-    { type: 'instagram', linksTo: 'https://www.instagram.com' },
-    { type: 'facebook', linksTo: 'https://www.facebook.com' },
-    { type: 'web', linksTo: 'https://www.google.com' },
-    { type: 'twitter', linksTo: 'https://www.twitter.com' },
-    { type: 'snapchat', linksTo: 'https://www.snapchat.com' },
-  ],
-};
+import profile from './profile';
 
 const Example = () => (
   <Fragment>
-    <Issue {...issue}>
+    <Issue {...profile}>
       <Content title="Famous Names In Barbecue">
         <h4>Do you like chicken?</h4>
         <p>

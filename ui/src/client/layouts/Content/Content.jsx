@@ -1,6 +1,17 @@
 import React from 'react';
+import { string, node } from 'prop-types';
 
 import styles from './Content.css';
+
+const propTypes = {
+  title: string,
+  children: node,
+};
+
+const defaultProps = {
+  title: '',
+  children: null,
+};
 
 const Content = ({ title, children }) => (
   <div className={styles.content}>
@@ -10,5 +21,8 @@ const Content = ({ title, children }) => (
     </div>
   </div>
 );
+
+Content.propTypes = propTypes;
+Content.defaultProps = defaultProps;
 
 export default Content;
