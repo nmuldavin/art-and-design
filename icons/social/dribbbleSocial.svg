@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>dribbbleSocial</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-541.000000, -785.000000)" stroke="#394249" stroke-width="2">
+            <g id="dribbbleSocial" transform="translate(542.000000, 786.000000)">
+                <rect id="Rectangle-4" x="0" y="0" width="28" height="28" rx="7"></rect>
+                <g id="Group-9" transform="translate(6.000000, 6.000000)">
+                    <path d="M15.6445333,7.95536 C15.6445333,12.2022933 12.2018667,15.6444267 7.95546667,15.6444267 C3.70906667,15.6444267 0.266933333,12.2022933 0.266933333,7.95536 C0.266933333,3.70896 3.70906667,0.266826667 7.95546667,0.266826667 C12.2018667,0.266826667 15.6445333,3.70896 15.6445333,7.95536" id="Stroke-1"></path>
+                    <path d="M4.98202667,0.862666667 C6.93882667,2.86106667 8.71322667,5.75813333 9.91056,9.1896 C10.59536,11.1533333 11.0236267,13.0973333 11.2108267,14.9229333" id="Stroke-3"></path>
+                    <path d="M2.81381333,13.7361067 C3.73541333,11.5101379 5.93328,9.57496222 8.88528,8.7020912 C11.2474133,8.00389279 13.6442133,8.11656893 15.6106133,8.86446293" id="Stroke-5"></path>
+                    <path d="M13.3562667,2.38298667 C12.0384,3.99045333 9.9552,5.39152 7.41813333,6.20432 C4.8944,7.01392 2.39733333,7.08858667 0.3952,6.55578667" id="Stroke-7"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

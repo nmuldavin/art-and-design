@@ -3,9 +3,19 @@
   line-height: 22px;
   margin: 40px 16px 12px;
   text-align: center;
+}
 
-  & .link {
-    color: var(--white);
-    text-decoration: none;
+.link {
+  color: var(--white);
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: var(--lightgray);
+    text-decoration: underline;
   }
 }

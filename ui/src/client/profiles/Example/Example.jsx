@@ -30,7 +30,7 @@ const Example = () => (
           which you can save money on your cookware purchases. To this end, you
           might want to focus your attention on the Internet and the World Wide
           Web, specifically on overstock merchandise sites that are springing up
-          all over the Net.
+          all over the Net. <a href="/#">Hi there</a>
         </p>
         <Quote credit="Eric Herrmann">
           I like chicken, I like liver. Meow Mix. Meow Mix. Please deliver.

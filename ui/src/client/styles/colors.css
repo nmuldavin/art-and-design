@@ -2,5 +2,11 @@
   --black: #000000;
   --white: #ffffff;
   --darkgray: #394249;
+  --darkgrayhover: #525f69;
+  --darkgrayactive: #22272b;
   --lightgray: #bdc7cf;
+  --lightgrayhover: #d8e4ed;
+  --lightgrayactive: #acb5bd;
+  --link: #2071b0;
+  --linkdark: #16517d;
 }

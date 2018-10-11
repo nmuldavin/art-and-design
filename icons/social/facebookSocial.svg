@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>facebookSocial</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-261.000000, -785.000000)" stroke="#394249" stroke-width="2">
+            <g id="facebookSocial" transform="translate(262.000000, 786.000000)">
+                <rect id="Rectangle-4" x="0" y="0" width="28" height="28" rx="7"></rect>
+                <path d="M21,8.00522924 C17.9774307,8.00522924 15,7.72406844 15,11.2850279 C15,13.6590008 15,19.2306582 15,28" id="Path-2"></path>
+                <polygon id="Rectangle-17" points="18.5890503 17 18.5776215 17.0334452 11 17"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
