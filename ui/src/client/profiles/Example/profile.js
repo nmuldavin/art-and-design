@@ -3,7 +3,7 @@ import profileImage from './profile.jpg';
 
 const issue = {
   issueNumber: 1,
-  name: 'Eric Herrman',
+  name: 'Eric Herrmann',
   date: new Date('09/13/18'),
   discipline: 'Photography',
   icon: 'photo',

@@ -1,3 +1,12 @@
 .site-logo {
   fill: var(--lightgray);
+  cursor: pointer;
+}
+
+.site-logo:hover {
+  fill: var(--lightgrayhover);
+}
+
+.site-logo:active {
+  fill: var(--lightgrayactive);
 }
